@@ -2,7 +2,7 @@
 bl_info = {
     "name": "PBR Materials",
     "description": "PBR Materials and procedural textures",
-    "version": (3, 2),
+    "version": (3, 3),
     "blender": (2, 80, 0),
     "author": "Wolf & Nathan Craddock",
     "location": "Material Properties and Shader Editor",
