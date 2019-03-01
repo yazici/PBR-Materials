@@ -744,6 +744,8 @@ def append_texture_node_group(self, context):
 def principled(node_name, active_mat, output):
 	principled = active_mat.node_tree.nodes.new("ShaderNodeBsdfPrincipled")
 	principled.name = node_name
+	principled.distribution = "MULTI_GGX"
+	principled.subsurface_method = "RANDOM_WALK"
 	active_mat.node_tree.links.new(principled.outputs[0], output.inputs[0])
 	return principled
 
@@ -752,6 +754,8 @@ def principled(node_name, active_mat, output):
 def principled_nodes(node_name, active_mat):
 	principled = active_mat.node_tree.nodes.new("ShaderNodeBsdfPrincipled")
 	principled.name = node_name
+	principled.distribution = "MULTI_GGX"
+	principled.subsurface_method = "RANDOM_WALK"
 	principled.location = bpy.context.space_data.edit_tree.view_center
 	return principled
 
