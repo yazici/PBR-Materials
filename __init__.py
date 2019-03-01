@@ -129,7 +129,7 @@ def add_material(self, context):
 	active_mat.node_tree.nodes.clear()    
 	preview_type = active_mat.preview_render_type
 	output = active_mat.node_tree.nodes.new("ShaderNodeOutputMaterial")
-	output.location = (200, 0)
+	output.location = (300, 0)
 
 	# Dielectrics
 	if node_name=="Dielectric":
